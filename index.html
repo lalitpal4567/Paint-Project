@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="drawing-tools">
+            <section class="section">
+                <label for="" class="labels">Colors</label>
+                <div class="drawing-colors flexible-block">
+                    <div class="colors" style="background-color: black;"></div>
+                    <div class="colors" style="background-color: white"></div>
+                    <div class="colors" style="background-color: red;"></div>
+                    <div class="colors" style="background-color: blue;"></div>
+                    <div class="colors" style="background-color: green;"></div>
+                    <div class="colors" style="background-color: yellow;"></div>
+                </div>
+                <div class="flexible-block">
+                    <input type="color">
+                    <div class="selected-color" style="background-color: white;"></div>
+                    <div class="selected-color" style="background-color: white;"></div>
+                </div>
+            </section>
+            <hr>
+            <section class="section">
+                <label for="" class="labels">Tools</label>
+                <div></div>
+                <div class="pen-eraser-bucket flexible-block">
+                    <img class="icons" id="penimage" src="penimage.svg" alt="colorPen">
+                    <img class="icons" id="paintBucket" src="paintBucket.svg" alt="paintBucket">
+                    <img class="icons" id="eraser" src="eraser.svg" alt="white-eraser">
+                </div>
+            </section>
+            <hr>
+            <section class="section">
+                <label for="" class="labels">Brush</label>
+                <div class="flexible-block">
+                    <img class="icons" id="brush" src="brush.svg" alt="">
+                    <img class="icons" id="highlighter" src="highligher.svg" alt="">
+                    <img class="icons" id="sprayBrush" src="sprayBrush.svg" alt="">
+                </div>
+            </section>
+            <hr>
+            <section class="section">
+                <label for="" class="labels">Shapes</label>
+                <div class="flexible-block" >
+                    <img class="icons" id="circle" src="./circle.svg" alt="">
+                    <img class="icons" id="ractangle" src="./ractangle.svg" alt="">
+                    <img class="icons" id="square" src="./square.svg" alt="">
+                    <img class="icons" id="triangle" src="./triangle.svg" alt="">
+                    <img class="icons" id="line" src="./line.svg" alt="">
+                    <img class="icons" id="star" src="./star.svg" alt="">
+                </div>
+            </section>
+            <hr>
+            <section class="flexible-block">
+                <button class="buttons" type="button">Clear Canvas</button>
+                <button class="buttons" type="button">Save Image</button>
+            </section>
+        </div>
+        <canvas id="myCanvas" width="830px" height="473"></canvas>
+    </div>
+    <script src="Code.js"></script>
+</body>
+
+</html>
